@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav className="fixed top-0 z-[1000] flex h-20 w-full items-center justify-between border-b-4 border-black bg-themelight dark:bg-bagcolor px-4 md:px-22">
+      <nav className="fixed top-0 z-[1000] flex h-20 w-full items-center justify-between border-b-4 border-black bg-white dark:bg-bagcolor px-4 md:px-22">
         {/* Logo */}
         <Link
           to="/"
@@ -94,9 +94,9 @@ const Navbar = () => {
             variant="neutral"
           >
             {theme === 'dark' ? (
-              <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />
+              <Moon style={{ height: 20, width: 20 }} className="h-[1.2rem] w-[1.2rem] transition-all" />
             ) : (
-              <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />
+              <Sun style={{ height: 20, width: 20 }} className="h-[1.2rem] w-[1.2rem] transition-all" />
             )}
             <span className="sr-only">Toggle theme</span>
           </Button>
@@ -111,7 +111,7 @@ const Navbar = () => {
           className={`fixed top-[80px] left-0 w-full outfit-font p-4 z-[900]   ${closing ? 'animate-slide-up' : 'animate-slide-down'
             }`}
         >
-          <div className="flex flex-col gap-4 px-6 border-black  bg-themelight dark:bg-bagcolor rounded-base shadow-shadow border-2 border-border">
+          <div className="flex flex-col gap-2 px-6 py-4 border-black  bg-white dark:bg-bagcolor rounded-base shadow-shadow border-2 border-border">
             {['Home', 'About', 'Experience', 'Projects'].map((item, index) => (
               <Link
                 key={index}

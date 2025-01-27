@@ -19,6 +19,7 @@ module.exports = {
         ringOffset: 'var(--ring-offset)',
         themelight: '#DFE5F2',
         thememain: '#88AAEE',
+        themehead: '#407cf5',
 
         secondaryBlack: '#212121',
       },
