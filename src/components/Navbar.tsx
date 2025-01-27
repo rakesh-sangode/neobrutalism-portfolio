@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav className="sticky top-0 z-[1000] flex h-20 w-full items-center justify-between border-b-4 border-slate-900 bg-themelight dark:bg-bagcolor px-4 md:px-22">
+      <nav className="fixed top-0 z-[1000] flex h-20 w-full items-center justify-between border-b-4 border-black bg-themelight dark:bg-bagcolor px-4 md:px-22">
         {/* Logo */}
         <Link
           to="/"
@@ -93,10 +93,14 @@ const Navbar = () => {
             className="h-12 w-12"
             variant="neutral"
           >
-            <Sun size={16} />
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            {theme === 'dark' ? (
+              <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />
+            ) : (
+              <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />
+            )}
             <span className="sr-only">Toggle theme</span>
           </Button>
+
         </div>
       </nav>
 
