@@ -5,12 +5,16 @@
 
 
 :root {
-  --main: #88aaee;
+  /* --main: #b37dff; */
+  --main: #A3E636;
   --overlay: rgba(0, 0, 0, 0.8);
-  --container-bg: #adface;
+  /* --container-bg: #f0e5ff; */
+  /* --container-bg: #fff; */
   /* background color overlay for alert dialogs, modals, etc. */
 
-  --bg: #fff4e0;
+  /* --bg: #d9beff; */
+  /* --bg: #f0e5ff; */
+  --bg: #E0E7F1;
   --bw: #fff;
   /* white and secondary black e.g. utility class variant would be: bg-[#fff] dark:bg-[#212121] */
   --blank: #000;
@@ -34,7 +38,9 @@
 }
 
 .dark {
-  --bg: #272933;
+  /* --bg: #272733; */
+  --bg: #2c312b;
+  /* --container-bg: #212121; */
   --bw: #212121;
   --blank: #fff;
   --border: #000;

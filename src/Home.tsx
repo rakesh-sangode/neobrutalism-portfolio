@@ -4,7 +4,7 @@ import { Button } from './components/ui/button'
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-between bg-bg px-6 md:px-12 lg:px-20 py-10 md:py-16 min-h-[80vh] overflow-hidden dark:bg-bg">
+    <section className="relative h-auto md:h-screen flex flex-col md:flex-row items-center justify-between bg-bg px-6 md:px-12 lg:px-20 py-28 md:py-16 min-h-[80vh] overflow-hidden dark:bg-bg bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px]">
       {/* Left Section */}
       <div className="text-center md:text-left space-y-4 md:space-y-6 max-w-lg">
         <motion.h1
