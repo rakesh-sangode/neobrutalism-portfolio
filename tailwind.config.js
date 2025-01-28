@@ -20,6 +20,7 @@ module.exports = {
         themelight: '#DFE5F2',
         thememain: '#88AAEE',
         themehead: '#407cf5',
+        themebg: '#272733',
 
         secondaryBlack: '#212121',
       },

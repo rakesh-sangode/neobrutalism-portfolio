@@ -6,15 +6,9 @@ import DefaultLayout from './components/Layout/DefaultLayout'
 
 const App = () => {
   return (
-    <ThemeProvider
-      defaultTheme="dark"
-      storageKey="vite-ui-theme"
-    >
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Routes>
-        <Route
-          path="/"
-          element={<DefaultLayout />}
-        >
+        <Route path="/" element={<DefaultLayout />}>
           <Route
             index
             element={
